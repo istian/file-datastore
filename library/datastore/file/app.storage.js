@@ -1,4 +1,4 @@
-var storage = require('./_base/storage');
+var Storage = require('./_base/storage');
 var Collection = require('./_base/Collection');
 var appStorage;
 
@@ -6,7 +6,7 @@ appStorage = (function() {
   var instance;
 
   function init(opts) {
-    return new jsonStore(opts);
+    return new Storage(opts);
   }
 
   return {

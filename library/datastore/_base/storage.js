@@ -1,8 +1,17 @@
-module.exports = function(opts) {
-  //@TODO: create method Collection that will return
-  // specific Collection object that has cRUD functionalities
-  return {
-    Connect: opts.adapter.connect.bind(opts.adapter);
-    Disconnect: opts.adapter.disconnect.bind(opts.adapter);
-  };
+var _ = require('lodash');
+
+var Storage;
+
+Storage = function(opts) {
+  this.opts = _.assign({}, opts);
 };
+
+Storage.prototype.Connect = function() {
+  this.opts.adapter.connect.apply(this);
+}
+
+Storage.prototype.Disconnect = function() {
+  this.opts.adapter.Disconnect.apply(this);
+}
+
+module.exports = Storage;
