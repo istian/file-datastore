@@ -1,0 +1,32 @@
+{
+  "name": "file-db",
+  "version": "1.0.0",
+  "description": "a file base package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/istian/file-datastore.git"
+  },
+  "keywords": [
+    "file",
+    "json",
+    "dao"
+  ],
+  "author": "iamist <vicentechristian@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/istian/file-datastore/issues"
+  },
+  "homepage": "https://github.com/istian/file-datastore",
+  "dependencies": {
+    "getobject": "^0.1.0",
+    "graceful-fs": "^4.1.2",
+    "json-parse-helpfulerror": "^1.0.3",
+    "lodash": "^3.10.0",
+    "moment": "^2.10.6",
+    "steno": "^0.4.2"
+  }
+}
