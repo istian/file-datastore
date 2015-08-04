@@ -1,5 +1,4 @@
-var Storage = require('./_base/storage');
-var Collection = require('./_base/Collection');
+var Storage = require('./../_base/storage');
 var appStorage;
 
 appStorage = (function() {
@@ -16,9 +15,6 @@ appStorage = (function() {
       }
 
       return instance;
-    },
-    Collection: function(name) {
-      return new Collection(name, instance);
     }
   };
 

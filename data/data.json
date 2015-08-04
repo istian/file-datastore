@@ -1,11 +1,13 @@
 {
   "data": {
-    "maps": [
+    "cluster_maps": [
       {
+        "id": 1,
         "name": "lorem",
         "description": "hi ho hi ho skin lagot kay"
       },
       {
+        "id": 2,
         "name": "pimple",
         "description": "sa puwet"
       }

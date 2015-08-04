@@ -14,9 +14,9 @@ Collection = function(name, connection) {
 
 }
 
-Collection.prototype.find = function(criteria, opts, cb) {
+Collection.prototype.find = function(criteria, cb) {
   var result;
-  result = this.connection.adapter.find(this, criteria, opts);
+  result = this.connection.adapter.find(this, criteria);
   return cb(null, result);
 };
 
@@ -46,4 +46,4 @@ Collection.prototype.destroy = function(identifier, cb) {
   return cb(null, result);
 };
 
-module.exports = Collection(name, connection);
+module.exports = Collection;
